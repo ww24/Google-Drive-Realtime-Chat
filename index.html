@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Google Drive Realtime API DEMO</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <header>
+          <h1>
+            <a href="/">
+              <img src="img/logo.png" alt="Realtime Chat">
+            </a>
+          </h1>
+          <p>Google Drive Realtime API を利用した Realtime Chat</p>
+        </header>
+        
+        <section class="google-control">
+          <p>初めて使用する場合は、 Google アカウントで認証が必要です。</p>
+          <button id="authorizeButton" disabled="disabled">認証</button>
+          <button id="create" disabled="disables">作成</button>
+          <button id="share" disabled="disabled">共有</button>
+        </section>
+        
+        <section class="message">
+          <h3>Messages</h3>
+          <ul id="list">
+            <li>認証待ち...</li>
+          </ul>
+          <section>
+            <input id="textbox" type="text" disabled="true">
+            <button id="send" disabled="true">Send</button>
+            <div class="clear"></div>
+          </section>
+        </section>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="js/realtime-client-utils.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/realtime-chat.js"></script>
+  </body>
+</html>
